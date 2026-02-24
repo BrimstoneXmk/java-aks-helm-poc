@@ -1,0 +1,11 @@
+image:
+  repository: gopocacrmanas.azureacr.io/demo-app
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+replicaCount: 1
+  

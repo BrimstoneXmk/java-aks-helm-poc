@@ -26,7 +26,7 @@ jobs:
         run: |
            echo "${{ secrets.ACR_PASSWORD }}" | docker login \
              ${{ secrets.ACR_NAME }}.azurecr.io \
-             -u ${{ secrets.ACR_USERNAME }} \
+             --username ${{ secrets.ACR_USERNAME }} \
              --password-stdin
       - name: Build Docker image
         run: |
